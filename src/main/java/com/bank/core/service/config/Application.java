@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ComBankCoreServiceIsoCountryCodesApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ComBankCoreServiceIsoCountryCodesApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
