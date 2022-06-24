@@ -1,8 +1,8 @@
 DROP TABLE  DEV.country_codes;
 CREATE  TABLE dev.country_codes
 (
-    name character varying NOT NULL,
-    code2 character varying(2) NOT NULL UNIQUE,
+    name character varying NOT NULL UNIQUE,
+    code2 character varying(2) NOT NULL ,
     code3 character varying(3) NOT NULL UNIQUE,
     country_code integer NOT NULL UNIQUE,
     region character varying ,
@@ -11,7 +11,7 @@ CREATE  TABLE dev.country_codes
     region_code integer,
     sub_region_code integer,
     intermediate_region_code integer,
-    PRIMARY KEY (name)
+    PRIMARY KEY (code2)
 )
 
 TABLESPACE dev;
